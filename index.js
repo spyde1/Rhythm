@@ -24,14 +24,14 @@ dark.addEventListener('click', function () {
 
 var songList = [
   {
+    title : "Kyu",
+    path : "src/kyu.mp3"
+  },{
     title : "We Don't Talk Anymore",
     path : "src/talk.mp3"
   },{
     title : "Attention",
     path : "src/Attention.mp3"
-  },{
-    title : "Kyu",
-    path : "src/kyu.mp3"
   },{
     title : "Kandhe Ka til",
     path : "src/Kandhe Ka til.mp3"
@@ -79,7 +79,7 @@ function reset() {
 function loadSong(songIndex) {
   //clearInterval(upTime);
   music.src = songList[songIndex].path;
-  music.load();
+  //music.load();
   document.getElementById('track').innerHTML = songList[songIndex].title;
   //upTime = setInterval(update,1000)
 }
