@@ -59,6 +59,7 @@ playList[x].addEventListener('click', function () {
       console.log(playListV + ' playing from playList');
       loadSong(i);
       music.play();
+      closeMenu();
       break;
     }
   }
